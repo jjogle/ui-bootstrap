@@ -1,0 +1,99 @@
+/* We use this to get basic styling on all basic form elements */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"]
+  +box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1))
+  +border-radius(3px)
+  background-color: white
+  font-family: inherit
+  +border(solid)
+  color: rgba(0, 0, 0, 0.75)
+  display: block
+  font-size: 0.875em
+  margin: 0 0 1em 0
+  padding: 0.5em
+  height: 2.3125em
+  width: 100%
+  +box-sizing(border-box)
+  *behavior: url(/assets/boxsizing.htc)
+  +transition(all 0.25s linear)
+textarea
+  +box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.1))
+  +border-radius(3px)
+  background-color: white
+  font-family: inherit
+  +border(solid)
+  color: rgba(0, 0, 0, 0.75)
+  display: block
+  font-size: 0.875em
+  margin: 0 0 1em 0
+  padding: 0.5em
+  width: 100%
+  +box-sizing(border-box)
+  *behavior: url(/assets/boxsizing.htc)
+  +transition(all 0.25s linear)
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus
+  background-color: #fafafa
+  border-color: #999999
+  outline: none
+  +box-shadow(0 0 5px rgba(0, 0, 0, 0.5))
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="month"][disabled],
+input[type="week"][disabled],
+input[type="email"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+textarea[disabled]
+  background-color: #dddddd
+/* We add basic fieldset styling */
+fieldset
+  +border(solid)
+  padding: 1.25em
+  margin: 1.125em 0
+  fieldset legend
+    font-weight: bold
+    background: white
+    padding: 0 0.1875em
+    margin: 0
+    margin-left: -0.1875em
+input[type="submit"]
+  +view
+input[type="search"]
+  height: 1em
+  line-height: 1em
+  +border(solid)
+input[type="file"]
+  font-size: 94% !important
+input[type="file"]:focus
+
+input[type="file"][disabled]
